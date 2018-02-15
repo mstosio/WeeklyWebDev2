@@ -11,6 +11,8 @@ body {
 }
 
 h2 {
+	margin-top: 100px;
+ 	text-align: center;
 	font-size: 30px;
 	font-family: 'Montserrat';
 	text-transform: uppercase;
@@ -99,12 +101,6 @@ p {
  
 }
 
-/*#selling-points:after {
-	display: block;
-	content: "";
-	clear: both;
-}*/
-
 
 /*--------------------------MAIN BANNER-----------------------------*/
 
@@ -149,8 +145,6 @@ p {
 /*---------------------SERVICES----------------*/
 
 .service {
-	/*display: flex;
-	flex-wrap: wrap;*/
 	width: 100%;
 	min-height: 530px;*/
 }
@@ -170,20 +164,13 @@ p {
 	flex-direction: wrap;
 	padding-top: 45px;
 	padding-bottom: 45px;
-	/*margin: 70px;*/
-/*	flex-wrap: wrap;*/
-	/*flex-direction: center;*/
 	justify-content: space-between;
 
 }
 
 .service_skills_list {
-	/*flex-direction: row;*/
 	font-size: 15px;
 	margin: 25px;
-	/*display: block;*/
-	/*width: 30%;
-	padding: 3.3%;*/
 	text-align: center;
 }
 
@@ -197,8 +184,7 @@ p {
 
 .relax {
 	display: flex;
-	height: 616px;
-
+	min-height: 616px;
 	justify-content: flex-end;
 	flex-direction: row;
 
@@ -213,7 +199,7 @@ p {
 
 .relax_right {
 	z-index: 1;
-	width: 75%;
+	width: 70%;
 	height: 100%;
 	/*background-attachment: fixed;*/
 	background: url("icons/relax-right-background.jpg") no-repeat;
@@ -282,18 +268,15 @@ p {
 /*-----------------------PROJECT---------------------*/
 
 .project {
-	height: 833px;
+	min-height: 833px;
 	display: flex;
-	justify-content: flex-start;
 	background: url(icons/project-background.jpg) no-repeat;
 	background-size: cover;
-}
+} 
+
+
 
 .project h2 {
-  margin-top: 100px;
-  text-align: center;
-  font-size: 30px;
-  font-family: "Montserrat";
   color: rgb(34, 34, 34);
   font-weight: bold;
   text-transform: uppercase;
@@ -308,14 +291,22 @@ p {
 }
 
 .project_content {
-	width: 50%;
+	display: flex;
+	flex-direction: column;
+	padding-right: 50%;
+	/*max-width: 350px;*/
+	margin: 25px;
+}
+
+.project_content-header {
+	text-align: center;
 }
 
 .project_icon {
-	 position: relative;
-  	top: 25px;
+	position: relative;
+	top: 55px;
   	left: 5px;
-  	padding-right: 25px
+  	padding-right: 25px;
 }
 
 .project__row--1, .project__row--2, .project__row--3 {
@@ -325,10 +316,28 @@ p {
 	
 }
 
+.hypertext {
+	margin-top: 50px;
+}
+
 .hypertext-link { 
 	padding-top: 25px;
+
+	text-transform: uppercase;
+	color: rgb(124, 197, 118);
+	font-family: "Montserrat";
+	font-size: 16px;
+	text-decoration: none;
+
  }
 
+ .culture {
+ 	min-height: 833px;
+ }
+
+
+
+/* ---------- RWD -------------- */
 
 @media(max-width: 700px) {
 	
@@ -337,8 +346,8 @@ p {
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
-		margin: 25px;
-		padding: 25px;
+		margin: 40px;
+		padding: 40px;
 
 	}
 
@@ -346,9 +355,10 @@ p {
 		margin: 15px;
 	}
 
-	.service_skills p {
-		
+	.project_content {
+		padding-right: 0 !important;
 	}
-}
+	
 
+}	
 
