@@ -11,7 +11,7 @@ body {
 }
 
 h2 {
-	margin-top: 100px;
+	padding-top: 100px;
  	text-align: center;
 	font-size: 30px;
 	font-family: 'Montserrat';
@@ -331,17 +331,70 @@ p {
 
  }
 
+/*----------CULTURE CONTENT--------------*/
+
  .culture {
- 	min-height: 833px;
+ 	min-height: 530px;
+ 	background-color: rgb(249, 249, 249);
  }
 
+ .culture_content {
+	display: flex;
+	flex-direction: wrap;
+	padding-top: 45px;
+	padding-bottom: 45px;
+	justify-content: space-between;
 
+}
+
+.culture_content-list {
+	font-size: 15px;
+	margin: 25px;
+	text-align: center;
+}
+
+.culture_header  {
+	padding-top: 20px;
+}
+
+/*-------------CLIENTS---------------*/
+
+.clients {
+	min-height: 530px;
+	background-color: rgb(255,255,255);
+}
+
+.clients_content {
+	display: flex;
+	flex-direction: ;
+}
+
+.clients_column {
+	justify-content: row;
+}
+
+.clients_content-circle {
+
+	background-color: red;
+	 width: 390px;
+	margin: 1px;
+	
+	border-radius: 50%;
+}
+
+.clients_content-text {
+
+	background-color: blue;
+	min-width: 250px;
+	margin: 1px;
+	min-height: 250px;
+}
 
 /* ---------- RWD -------------- */
 
 @media(max-width: 700px) {
 	
-	.service_skills {
+	.service_skills, .culture_content {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
