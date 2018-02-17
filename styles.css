@@ -11,7 +11,7 @@ body {
 }
 
 h2 {
-	padding-top: 100px;
+	padding-top: 75px;
  	text-align: center;
 	font-size: 30px;
 	font-family: 'Montserrat';
@@ -365,30 +365,141 @@ p {
 }
 
 .clients_content {
+	position: relative;
+	margin: 0 auto;
 	display: flex;
-	flex-direction: ;
+	flex-wrap: wrap;
 }
 
 .clients_column {
-	justify-content: row;
+	display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
 }
 
 .clients_content-circle {
 
-	background-color: red;
-	 width: 390px;
-	margin: 1px;
-	
+	background-color: rgb(249 , 249, 249);
+	width: 220px;
+	height: 220px;
+	margin: 25px;
 	border-radius: 50%;
 }
 
-.clients_content-text {
+.clients_content-text, .clients_content-text--2 {
 
-	background-color: blue;
-	min-width: 250px;
-	margin: 1px;
-	min-height: 250px;
+	position: relative;
+	background-color: rgb(249 , 249, 249);
+	width: 650px;
+	height: 170px;
+	margin: 50px 25px 25px 25px;
 }
+
+.clients_content-text p  {
+	font-size: 22px;
+	padding: 0px 50px 0px 50px ;
+	color: rgb(119, 119, 119);
+	text-align: center;
+}
+
+.clients_footer {
+	text-align: center;
+	color: rgb(124, 197, 118);
+	 font-size: 18px;
+
+	
+}
+
+
+.clients_content-text::before {
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  left: -15px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  bottom: calc(50% - 15px);
+  background-color: #f9f9f9;
+}
+
+.clients_content-text--2::before {
+	content: "";
+	position: absolute;
+	height: 30px;
+	width: 30px;
+	right: -15px;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	bottom: calc(50% - 15px);
+	background-color: #f9f9f9;
+}
+
+
+/*-----------------NEXT PROJECT----------------------*/
+
+
+.next-project {
+	display: flex;
+	background-color: rgb(124, 197, 118);
+	min-height: 250px;
+	
+}
+
+.next-project_content {
+	display: flex;
+	margin-bottom: 75px;
+	flex-direction: column;
+	align-items: center;
+}
+
+.next-project_content h2 {
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+  
+  }
+
+.next-project_content--button {
+  	text-align: center;
+	text-decoration: none;
+	font-family: 'Montserrat';
+	margin-top: 15px;
+	border-style: solid;
+  	border-width: 3px;
+	border-color: rgb(255, 255, 255);
+	background-color: rgb(124, 197, 118);
+	border-radius: 4px;
+	color: white;
+	text-transform: uppercase;
+	 outline: none;
+	 font-size: 15px;
+	 font-weight: bold;
+	 text-align: center;
+	 height: 60px;
+	 width: 180px;
+}
+
+.next-project_content--button:hover {
+	background-color: rgb(255,255,255);
+	color: rgb(124, 197, 118);
+
+}
+
+/*----------------LOGOS-------------------------*/
+
+
+.logos {
+	min-height: 165px;
+}
+
+.logos_content {
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+	padding: 25px;
+}
+
 
 /* ---------- RWD -------------- */
 
@@ -404,12 +515,40 @@ p {
 
 	}
 
+	.relax_left {
+		display: none;
+	}
+
+	.relax_right {
+		display: flex;
+		width: 100%;
+	}
+
+	.relax_right_content {
+	line-height: 40px;
+	max-width: 500px;
+	padding: 0;
+}
+
 	.service_header {
 		margin: 15px;
 	}
 
 	.project_content {
 		padding-right: 0 !important;
+	}
+
+	.logos_content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	.logos_content img {
+		padding: 25px;
+		height: 50%;
+		width: 50%;
 	}
 	
 
