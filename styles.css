@@ -107,7 +107,7 @@ p {
 	color: white;
 	background-size: content;
 	min-height: 530px;
-	background: url("images/background.jpg") no-repeat;
+	background: url("//images/background.jpg") no-repeat;
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -649,9 +649,7 @@ p {
 
 	.clients_column1  {
 		display: flex;
-		flex-direction: column;
-		align-content: center;
-		
+		flex-direction: column;git 
 	}
 
 	.clients_column2 {
