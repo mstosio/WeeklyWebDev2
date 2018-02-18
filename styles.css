@@ -628,6 +628,14 @@ p {
 /* ---------- RWD -------------- */
 
 @media(max-width: 700px) {
+
+	.navbar {
+		display: none;
+	}
+
+	.navbar menu {
+		display: none;
+	}
 	
 	.service_skills, .culture_content {
 		display: flex;
