@@ -107,7 +107,7 @@ p {
 	color: white;
 	background-size: content;
 	min-height: 530px;
-	background: url("icons/background.jpg") no-repeat;
+	background: url("images/background.jpg") no-repeat;
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -191,7 +191,7 @@ p {
 .relax_left {
 	width: 30%;
 	height: 100%;
-	background: url("icons/relax-left-background.jpg") no-repeat;
+	background: url("images/relax-left-background.jpg") no-repeat;
 }
 
 
@@ -200,7 +200,7 @@ p {
 	width: 70%;
 	height: 100%;
 	/*background-attachment: fixed;*/
-	background: url("icons/relax-right-background.jpg") no-repeat;
+	background: url("images/relax-right-background.jpg") no-repeat;
 	background-size: cover;
 }
 
@@ -265,7 +265,7 @@ p {
 .project {
 	min-height: 833px;
 	display: flex;
-	background: url(icons/project-background.jpg) no-repeat;
+	background: url(images/project-background.jpg) no-repeat;
 	background-size: cover;
 } 
 
@@ -367,7 +367,7 @@ p {
 }
 
 .clients_column1, .clients_column2 {
-	display: -webkit-box;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
@@ -391,7 +391,7 @@ p {
 	margin: 50px 25px 25px 25px;
 }
 
-.clients_content-text p  {
+.clients_content-text p, .clients_content-text--2 p   {
 	font-size: 22px;
 	padding: 0px 50px 0px 50px ;
 	color: rgb(119, 119, 119);
@@ -626,15 +626,45 @@ p {
 
 
 /* ---------- RWD -------------- */
+@media(max-width: 1000px) {
+
+
 
 @media(max-width: 700px) {
 
-	.navbar {
-		display: none;
+	.clients_content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
 	}
 
-	.navbar menu {
-		display: none;
+	.clients_content-circle {
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		align-items: center;
+
+	}
+
+	.clients_column1  {
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		
+	}
+
+	.clients_column2 {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+
+	.clients_content-text, .clients_content-text--2 {
+
+		max-width: 300px;
+		min-height: 300px;
+		margin: 50px 25px 25px 25px;
 	}
 	
 	.service_skills, .culture_content {
@@ -646,6 +676,15 @@ p {
 		padding: 40px;
 
 	}
+
+	.clients_content-text::before {
+	 display: none;
+	}
+
+	.clients_content-text--2::before {
+		display: none;
+	}
+
 
 	.relax_left {
 		display: none;
@@ -672,10 +711,9 @@ p {
 		align-items: center;
 	}
 
-	.clients_content-text, .clients_content-text--2 {
-		min-width: 75%;
-		display: none;
-	}
+	/*.clients_content-text, .clients_content-text--2 {
+		
+	}*/
 
 	/*.global_button {
 		display: flex;
@@ -707,6 +745,10 @@ p {
 		padding: 25px;
 		height: 50%;
 		width: 50%;
+	}
+
+	.footer h3 {
+		text-align: center;
 	}
 
 	.footer__column--container {
