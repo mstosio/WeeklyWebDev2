@@ -366,7 +366,7 @@ p {
 	flex-wrap: wrap;
 }
 
-.clients_column {
+.clients_column1, .clients_column2 {
 	display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -646,6 +646,27 @@ p {
 	.relax_right {
 		display: flex;
 		width: 100%;
+	}
+
+	.clients_column1 {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.clients_column2 {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.clients_content-circle {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.clients_content-text, .clients_content-text--2 {
+		min-width: 75%;
+		display: none;
 	}
 
 	/*.global_button {
