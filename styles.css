@@ -105,9 +105,9 @@ p {
 .main-banner {
 	display: flex;
 	color: white;
-	background-size: content;
+	background-size: content;git 
 	min-height: 530px;
-	background: url("//images/background.jpg") no-repeat;
+	background: url("/images/background.jpg") no-repeat;
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
