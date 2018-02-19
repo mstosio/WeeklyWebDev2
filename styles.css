@@ -11,7 +11,7 @@ body {
 }
 
 h2 {
-	padding-top: 75px;
+	padding-top: 50px;
  	text-align: center;
 	font-size: 30px;
 	font-family: 'Montserrat';
@@ -182,34 +182,30 @@ p {
 
 .relax {
 	display: flex;
-	min-height: 616px;
-	justify-content: flex-end;
-	flex-direction: row;
-
+	height: 100%;
 }
 
 .relax_left {
 	width: 30%;
-	height: 100%;
+	
 	background: url("images/relax-left-background.jpg") no-repeat;
+	background-size: cover;
 }
 
 
 .relax_right {
+	display: flex;
 	z-index: 1;
 	width: 70%;
-	height: 100%;
-	/*background-attachment: fixed;*/
+	/*min-height: 100%;*/
 	background: url("images/relax-right-background.jpg") no-repeat;
 	background-size: cover;
 }
 
 
 .relax_right {
-  text-align: left;
   color: white;
   position: relative;
- /* background-attachment: fixed;*/
 }
 
 .relax_right:before {
@@ -225,7 +221,7 @@ p {
 .relax_right_content {
 	line-height: 40px;
 	max-width: 500px;
-	padding: 80px 0 0 100px;
+	padding: 0px 0 45px 100px;
 }
 
 .relax_right_content ul, p {
