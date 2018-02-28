@@ -55,6 +55,7 @@ p {
 	 text-align: center;
 	 height: 60px;
 	 width: 180px;
+	 cursor: pointer;
  
 }
 
@@ -81,15 +82,29 @@ p {
 	list-style-type: none;
 }
 
-
-.navbar_menu  {
-	flex: 1;
-	list-style-type: none;
-	display: flex;
-	
+.hamburger {
+	width: 100%;
+	background: blue;
+	text-align: left;
+	box-sizing: border-box;
+	padding: 15px 10px;
+	cursor: pointer;
 }
 
-.navbar_li a {
+
+.navbar_menu  {
+	display: flex;
+	flex: 1;
+	list-style-type: none;
+		
+}
+
+.navbar_menu ul {
+	display: flex;
+	list-style-type: none;
+}
+
+.navbar_item a {
 	width: 50px;
 	margin-left: 30px;
 	text-decoration: none;
@@ -98,6 +113,14 @@ p {
 	text-transform: uppercase;
  
 }
+
+/*label {
+	display: none;
+}
+
+.toggle {
+	display: none;
+}*/
 
 
 /*--------------------------MAIN BANNER-----------------------------*/
@@ -469,6 +492,7 @@ p {
 	 text-align: center;
 	 height: 60px;
 	 width: 180px;
+	 cursor: pointer;
 }
 
 .next-project_content--button:hover {
@@ -621,13 +645,49 @@ p {
 }*/
 
 
+
+
 /* ---------- RWD -------------- */
 @media(max-width: 1000px) {
 
 
 
 @media(max-width: 700px) {
+	
+	.navbar {
+		max-height: 0;
+ 		padding: 0;
+ 		margin: 0;
+	}
 
+	.navbar_clicked {
+		max-height: 250px;
+	}
+
+	.navbar_logo {
+		display: none;
+	}
+
+	.navbar_menu ul {
+		/*max-height: 0;*/
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.navbar_menu li {
+		padding: 10px 0 10px 0;
+	}
+
+	.navbar a {
+		margin: 0;
+	}	
+
+	
 	.clients_content {
 		display: flex;
 		flex-direction: column;
