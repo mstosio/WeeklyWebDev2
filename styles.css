@@ -72,8 +72,10 @@ p {
 
 /*--------------------------NAVBAR-----------------------------*/
 
+
+
 .navbar {
-	display: flex; 
+	display: flex;
 	padding: 25px;
 }
 
@@ -83,26 +85,38 @@ p {
 }
 
 .hamburger {
+	
 	width: 100%;
-	background: blue;
-	text-align: left;
 	box-sizing: border-box;
 	padding: 15px 10px;
 	cursor: pointer;
+	display: none;
 }
 
+.hamburger_icon {
+	align: left;
+	height: 50px;
+	width: 50px;
+}
 
 .navbar_menu  {
-	display: flex;
-	flex: 1;
+	display: block;
+	/*flex: 1;*/
 	list-style-type: none;
 		
 }
 
+
 .navbar_menu ul {
-	display: flex;
+	display: inline-block;
 	list-style-type: none;
 }
+
+.navbar_menu ul li {
+	display: inline-block;
+	list-style-type: none;
+}
+
 
 .navbar_item a {
 	width: 50px;
@@ -114,13 +128,10 @@ p {
  
 }
 
-/*label {
-	display: none;
+.navbar_item a:hover {
+	color: rgb(124, 197, 118);
 }
 
-.toggle {
-	display: none;
-}*/
 
 
 /*--------------------------MAIN BANNER-----------------------------*/
@@ -638,12 +649,6 @@ p {
 }
 
 
-/*.img {
-  border-radius: 50%;
-  background-color: rgb(34, 34, 34);
-  
-}*/
-
 
 
 
@@ -655,21 +660,31 @@ p {
 @media(max-width: 700px) {
 	
 	.navbar {
-		max-height: 0;
+		display: flex;
+		justify-content: center;
+		/*max-height: 0;*/
  		padding: 0;
  		margin: 0;
 	}
 
-	.navbar_clicked {
-		max-height: 250px;
+	.hamburger {
+		/*display: flex;
+		justify-content: center;*/
+		display: block;
 	}
+
+	.hamburger_icon {
+		/*align: left;*/
+		/*display: flex;
+		justify-content: center;*/
+	}
+
 
 	.navbar_logo {
 		display: none;
 	}
 
 	.navbar_menu ul {
-		/*max-height: 0;*/
 		width: 100%;
 		margin: 0;
 		padding: 0;
@@ -677,9 +692,12 @@ p {
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
+		display: none;
 	}
 
-	.navbar_menu li {
+	.navbar_menu ul li {
+		display: block;
+		list-style-type: none;
 		padding: 10px 0 10px 0;
 	}
 
@@ -765,13 +783,6 @@ p {
 		align-items: center;
 	}
 
-	/*.clients_content-text, .clients_content-text--2 {
-		
-	}*/
-
-	/*.global_button {
-		display: flex;
-	}*/
 
 	.relax_right_content {
 	line-height: 40px;
