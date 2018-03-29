@@ -1,6 +1,6 @@
+//RWD MOBLIE
+
 var hamburger = document.querySelector(".hamburger_icon")
-
-
 
 
 hamburger.addEventListener("click", function(){
