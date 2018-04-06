@@ -72,20 +72,36 @@ p {
 
 /*--------------------------NAVBAR-----------------------------*/
 
-
 .navbar {
+	transtion: all 0.5s;
+	/*position: fixed;*/
 	display: flex;
-	padding: 25px;
+	padding: 25px 0 25px 0;
+
 }
+
+.fixed-nav {
+	z-index: 2;
+	box-shadow: 0 5px rgb(0,0,0,0.1);
+	/*height: 50px;*/
+	width: 100%;
+	background-color: white;
+	/*padding: 0;*/
+	position: fixed;
+}
+
 
 .navbar_logo {
+	position: relative;
+	top: 10px;
 	flex: 1;
 	list-style-type: none;
+	padding-left: 150px;
 }
+
 
 .hamburger {
 	width: 100%;
-	/*box-sizing: border-box;*/
 	cursor: pointer;
 	display: none;
 }
@@ -99,6 +115,7 @@ p {
 .navbar_menu  {
 	display: block;
 	list-style-type: none;
+	padding-right: 150px;
 		
 }
 
@@ -135,8 +152,10 @@ p {
 .main-banner {
 	display: flex;
 	color: white;
-	background-size: content;git 
+	background-size: content;
+	width: 100%;
 	min-height: 530px;
+
 	background: url("images/background.jpg") no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -145,11 +164,12 @@ p {
 
 .main-banner_overlay {
     background-color: rgba(0, 0, 0, 0.7);
-    min-height: 530px;
+    min-height: 100%;
     width: 100%;
 }
 
 .main-banner_content {
+	padding-top: 50px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -164,10 +184,6 @@ p {
 	text-transform: uppercase;
 	font-family: 'Montserrat', extra-bold;
 }
-
-
-
-
 
 
 /*---------------------SERVICES----------------*/
@@ -193,6 +209,7 @@ p {
 	padding-top: 45px;
 	padding-bottom: 45px;
 	justify-content: space-between;
+	transition: 0.2s ease-in-out;
 
 }
 
@@ -200,7 +217,14 @@ p {
 	font-size: 15px;
 	margin: 25px;
 	text-align: center;
+	transition: top ease 0.5s;
 }
+
+
+.service_skills_list {
+	transform: translate(0, -10px);
+}
+
 
 .service_skills_list h3 {
 	text-transform: uppercase;
@@ -316,7 +340,6 @@ p {
 	display: flex;
 	flex-direction: column;
 	padding-right: 50%;
-	/*max-width: 350px;*/
 	margin: 25px;
 }
 
@@ -407,6 +430,11 @@ p {
 	height: 220px;
 	margin: 0 65px 0 65px;
 	border-radius: 50%;
+	transition: all 0.25s;
+}
+
+.clients_content-circle:hover {
+	transform: scale(1.15);
 }
 
 .clients_content-text, .clients_content-text--2 {
@@ -514,7 +542,7 @@ p {
 
 
 .logos {
-	min-height: 165px;
+	min-height: 125px;
 }
 
 .logos_content {
@@ -524,11 +552,21 @@ p {
 	padding: 25px;
 }
 
+.logos_content img {
+	transition: all 0.25s;
+	cursor: pointer;
+}
+
+.logos_content img:hover {
+	transform: scale(1.1);
+}
+
+
 
 /*---------------FOOTER--------------------*/
 
 .footer {
-	min-height: 360px;
+	min-height: 320px;
 	background-color: rgb( 34, 34, 34);
 }
 
@@ -578,7 +616,7 @@ p {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 0 0 40px 0;
+	margin: 0 0 25px 0;
 	padding: 0 50px;
 }
 
@@ -644,9 +682,14 @@ p {
 
 .media__footer--icons img {
 	padding: 0 10px 0 10px;
+	transition: all 0.25s;
 }
 
 
+.media__footer--icons img:hover {
+	padding: 0 10px 0 10px;
+	transform: scale(1.1);
+}
 
 
 
@@ -833,6 +876,10 @@ p {
 	.media__footer-content {
 		display: flex;
 		flex-direction: column;
+	}
+
+	.media__footer--icons img:hover {
+		
 	}
 
 	.media__footer--footer {
