@@ -84,7 +84,7 @@ p {
 	height: 50px;
 	width: 100%;
 	background-color: white;
-/*	padding: 0;*/
+	padding: 0;
 	position: fixed;
 }
 
@@ -220,11 +220,18 @@ p {
 	transition: top ease 0.5s;
 }
 
-
-.service_skills_list {
-	transform: translate(0, -10px);
+.service_skills_list--img {
+	transition: all 0.3s ease-in-out;
 }
 
+.service_skills_list:hover .service_skills_list--img {
+	transform: translateY(-10px);
+}
+
+.service_skills_list:hover .service_skills_list--heading{
+	color: rgb(124, 197, 118);
+	transform: scale(1.1);
+}
 
 .service_skills_list h3 {
 	text-transform: uppercase;
@@ -251,7 +258,6 @@ p {
 	display: flex;
 	z-index: 1;
 	width: 70%;
-	/*min-height: 100%;*/
 	background: url("images/relax-right-background.jpg") no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -984,6 +990,9 @@ p {
 		padding-bottom: 50px;
 	}
 	
+	.project_content {
+		margin: 25px;
+	}
 
 }	
 
