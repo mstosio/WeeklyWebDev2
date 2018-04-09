@@ -985,9 +985,16 @@ p {
 		padding-bottom: 25px;
 	}
 
-	.footer__column2, .footer__column3 {
+	.footer__column1 {
+		padding-left: 50px;
+	}
+	 .footer__column2, .footer__column3 {
 		padding-left: 50px;
 		padding-bottom: 50px;
+	}
+
+	.footer__column3--paragraph2 {
+		margin-top: 50px;
 	}
 	
 	.project_content {

@@ -34,6 +34,7 @@ const topOfNav = nav.offsetTop;
 const mainbanner = document.querySelector(".main-banner");
 
 
+
 function fixNav(){
 	if(window.scrollY >= 50){
 		nav.style.transition = "translate 2s";
