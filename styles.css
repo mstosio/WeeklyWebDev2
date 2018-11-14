@@ -1,3 +1,7 @@
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -75,26 +79,23 @@ p {
 
 .navbar {
 	display: flex;
-	padding: 25px 0 25px 0;
 }
 
 .fixed-nav {
 	z-index: 2;
 	box-shadow: 0 5px rgb(0,0,0,0.1);
-	height: 50px;
 	width: 100%;
 	background-color: white;
 	padding: 0;
 	position: fixed;
 }
 
-
 .navbar_logo {
 	position: relative;
 	top: 10px;
 	flex: 1;
 	list-style-type: none;
-	padding-left: 150px;
+	padding: 15px 0 0 150px;
 }
 
 
@@ -114,16 +115,20 @@ p {
 	display: block;
 	list-style-type: none;
 	padding-right: 150px;
-		
+	height: 75px;
 }
 
 
+
+
 .navbar_menu ul {
+	padding-top: 15px;
 	display: inline-block;
 	list-style-type: none;
 }
 
 .navbar_menu ul li {
+
 	display: inline-block;
 	list-style-type: none;
 }
@@ -136,7 +141,6 @@ p {
 	font-size: 14px;
 	color: rgb(119, 119, 119);
 	text-transform: uppercase;
- 
 }
 
 .navbar_item a:hover {
@@ -153,7 +157,6 @@ p {
 	background-size: content;
 	width: 100%;
 	min-height: 530px;
-
 	background: url("images/background.jpg") no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -190,7 +193,7 @@ p {
 
 .service {
 	width: 100%;
-	min-height: 530px;*/
+	min-height: 530px;
 }
 
 .service_header {
@@ -782,57 +785,65 @@ p {
 
 @media(max-width: 700px) {
 	
-/*	.header { 
-		display: flex;
-		align-items: flex-end;
-	 }*/
-
 
 	.navbar {
 		display: flex;
+ 		/* height: 250px; */
+	}	
+
+	.navbar--clicked {
+		display: flex;
 		justify-content: center;
- 		margin: 0;
  		display: block;
- 		margin: 0;
- 		min-height: 25px;
+ 		min-height: 300px;
 	}	
 
 	.hamburger {
 		display: block;
-		padding: 0;
-		margin: 0;
-	}
+		/* padding: 0;
+		margin: 0; */
+		
+	} 
 
 	.hamburger_icon {
-		display: block;
     	margin-left: 80%;
- 		position: absolute;
-	}
+	} 
 
 
 	.navbar_logo {
 		display: none;
 	}
 
+	.navbar_menu  {
+		padding-right: 0;
+		margin-bottom: 25px;
+		height: 0px;
+		
+	}
+
 	.navbar_menu ul {
 		width: 100%;
-		margin: 0;
 		padding: 0;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
 		display: none;
+		margin: 0;
+		
 	}
 
 	.navbar_menu ul li {
 		display: block;
+		padding: 5px 0 10px 0;
 		list-style-type: none;
-		padding: 10px 0 10px 0;
 	}
 
 	.navbar a {
 		margin: 0;
+		font-size: 25px;
+		
+		
 	}	
 
 	
