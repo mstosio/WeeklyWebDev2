@@ -43,10 +43,10 @@ const burger = document.querySelector('.hamburger');
 function fixNav(){
 	if(window.scrollY >= 50){
 		nav.style.transition = "translate 2s";
-		nav.style.paddingBottom = 10 + "px";
+		// nav.style.paddingBottom = 10 + "px";
 		nav.classList.add('fixed-nav');
 	} else {
-		mainbanner.style.paddingTop = 0 + "px";	
+		// mainbanner.style.paddingTop = 0 + "px";	
 		nav.classList.remove('fixed-nav');
 	}
 }

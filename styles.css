@@ -196,6 +196,8 @@ p {
 	min-height: 530px;
 }
 
+
+
 .service_header {
 	display: flex;
 	flex-direction: column;
@@ -205,6 +207,14 @@ p {
 	text-align: center;
 	
 }
+
+.anchor {
+	display: block;
+    position: relative;
+    top: -75px;
+    visibility: hidden;
+}
+
 
 .service_skills {
 	display: flex;
