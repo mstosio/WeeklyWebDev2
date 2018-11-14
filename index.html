@@ -1,363 +1,384 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Weekly Web Dev Challange 2</title>
-	<meta charset="utf-8">
+  <head>
+    <title>Weekly Web Dev Challange 2</title>
+    <meta charset="utf-8" />
 
-	<link rel="stylesheet" href="styles.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,800" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	<meta name="viewport" content="width=device-width">
-</head>
-<body>
-
-
-	<header id="header">
-		
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,800"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width" />
+  </head>
+  <body>
+    <header id="header">
+      
+      <nav class="navbar" id="navbar">
 		<div class="hamburger">
-			<img class="hamburger_icon" src="icons/menu_icon.png" alt="">
-		</div>
+			<img class="hamburger_icon" src="icons/menu_icon.png" alt="" />
+		</div>  
+        <div class="navbar_logo">
+          <li class="navbar_logo_li">
+            <a class="navbar_a" href="#">
+              <img class="navbar_logo-img" src="icons/logo.png" alt="logo" />
+            </a>
+          </li>
+        </div>
 
-		<nav class="navbar" id="navbar">
-			
-				<div class="navbar_logo">
-					<li class="navbar_logo_li">
-					<a class="navbar_a" href="#">
-						<img class="navbar_logo-img" src="icons/logo.png" alt="logo">
-					</a>
-					</li>
-				</div>
-							
-				<div class="navbar_menu">
-						<ul>
-							<li class="navbar_item"><a href="#main-banner">Home</a></li>
-							<li class="navbar_item"><a href="#relax">About</a></li>
-							<li class="navbar_item"><a href="#service-section">Blog</a></li>
-							<li class="navbar_item"><a href="#portfolio-section">Portfolio</a></li>
-							<li class="navbar_item"><a href="#contact-section">Contact</a></li>	
-						</ul>								
-				</div>			
-			
-		</nav>
-	</header>
+        <div class="navbar_menu">
+          <ul>
+            <li class="navbar_item"><a href="#main-banner">Home</a></li>
+            <li class="navbar_item"><a href="#service_header">About</a></li>
+            <li class="navbar_item"><a href="#relax">Blog</a></li>
+            <li class="navbar_item"><a href="#portfolio-section">Portfolio</a></li>
+            <li class="navbar_item"><a href="#contact-section">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
+    <section class="main-banner" id="main-banner">
+      <div class="main-banner_overlay">
+        <div class="main-banner_content" id="main-banner_content">
+          <h1>Creative Digital Solutions</h1>
+          <p>Proin iaculi purus consequat sem cure.</p>
+          <button class="global-button" type="submit" name="button">
+            View Portfolio
+          </button>
+        </div>
+      </div>
+    </section>
 
+    <div class="container">	
+      <section class="service" id="service-section">
+        <div id="service_header" class="service_header">
+          <h2>Professional Services</h2>
+          <p>Proin iaculis purus consequat sem cure</p>
+        </div>
 
-	<section class="main-banner" id="main-banner">
-		<div class="main-banner_overlay">
-			<div class="main-banner_content">
-				<h1>Creative Digital Solutions</h1>
-						<p>Proin iaculi	 purus consequat sem cure.</p>
-				<button class="global-button" type="submit" name="button">View Portfolio</button>
-			</div>
-		</div>
-	</section>	
+        <div class="service_skills">
+          <div class="service_skills_list">
+            <img class="service_skills_list--img" src="icons/heart.png" />
+            <h3 class="service_skills_list--heading">Beautiful Designs</h3>
+            <p>
+              Proin iaculis purus consequat sem cure digni ssim. Donec
+              porttitora entum suscipit aenean rhoncus posuere odio in
+              tincidunt.
+            </p>
+          </div>
 
+          <div class="service_skills_list">
+            <img class="service_skills_list--img" src="icons/mobile.png" />
+            <h3 class="service_skills_list--heading">Responsive Web</h3>
+            <p>
+              Proin iaculis purus consequat sem cure digni ssim. Donec
+              porttitora entum suscipit aenean rhoncus posuere odio in
+              tincidunt.
+            </p>
+          </div>
 
-	<div class="container">
-		<section class="service" id="service-section">
+          <div class="service_skills_list">
+            <img class="service_skills_list--img" src="icons/graph.png" />
+            <h3 class="service_skills_list--heading">Marketing</h3>
+            <p>
+              Proin iaculis purus consequat sem cure digni ssim. Donec
+              porttitora entum suscipit aenean rhoncus posuere odio in
+              tincidunt.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
 
+    <section id="relax" class="relax">
+      <div class="relax_left"></div>
+      <div class="relax_right">
+        <div class="relax_right_content">
+          <h2>Just Relax <span>&amp;</span> Let Us Do The Heavy Lifting</h2>
 
-			<div class="service_header">
-				<h2>Professional Services</h2>
-				<p>Proin iaculis purus consequat sem cure</p>
-			</div>
-			
-			<div class="service_skills">
-	
-					<div class="service_skills_list">
-						<img class="service_skills_list--img" src="icons/heart.png">
-						<h3 class="service_skills_list--heading">Beautiful Designs</h3>
-						<p>Proin iaculis purus consequat sem cure 
-						digni ssim. Donec porttitora entum suscipit 
-						aenean rhoncus posuere odio in tincidunt.</p>
-					</div>				
-					
-					<div class="service_skills_list">
-						<img class="service_skills_list--img" src="icons/mobile.png">
-						<h3 class="service_skills_list--heading">Responsive Web</h3>
-						<p>Proin iaculis purus consequat sem cure 
-						digni ssim. Donec porttitora entum suscipit 
-						aenean rhoncus posuere odio in tincidunt.</p>
-					</div>				
-					
-					<div class="service_skills_list">
-						<img class="service_skills_list--img" src="icons/graph.png">
-						<h3 class="service_skills_list--heading">Marketing</h3>
-						<p>Proin iaculis purus consequat sem cure 
-						digni ssim. Donec porttitora entum suscipit 
-						aenean rhoncus posuere odio in tincidunt.</p>
-					</div>
-			</div>
-		</section>
-	</div>
+          <p>
+            Proin iaculis purus consequat sem cure digni ssim. Donec porttitora
+            entum suscipit aenean rhoncus posuere odio in tincidunt.
+          </p>
 
-		<section id="relax" class="relax">
-				<div class="relax_left"></div>
-				<div class="relax_right">
-					<div class="relax_right_content">
-						<h2>Just Relax <span>&amp;</span> Let Us Do The Heavy Lifting</h2>
-					
-						<p>Proin iaculis purus consequat sem cure  digni ssim. Donec 
-						porttitora entum suscipit  aenean rhoncus posuere odio in tincidunt.</p>
-						
-						<ul class="relax_right_content--list">
-							<li class="relax_right_content--item">Initial Setup &amp; Customizations</li>
-							<li class="relax_right_content--item">Regular Updates</li>
-							<li class="relax_right_content--item">Round The Clock Support</li>							
-						</ul>
+          <ul class="relax_right_content--list">
+            <li class="relax_right_content--item">
+              Initial Setup &amp; Customizations
+            </li>
+            <li class="relax_right_content--item">Regular Updates</li>
+            <li class="relax_right_content--item">Round The Clock Support</li>
+          </ul>
 
-						<button class="global-button" type="submit" name="relax_button">View Portfolio</button>
-						
-					</div>
-					
-				</div>	
-		</section>
+          <button class="global-button" type="submit" name="relax_button">
+            View Portfolio
+          </button>
+        </div>
+      </div>
+    </section>
 
-		
-		<section class="project" id="portfolio-section">
-			<div class="container">
-				<div class="project_header">
-					<h2>Latest Project</h2>
-					<p class="subtitle">Proin iaculis purus consequat sem cure</p>
-				</div>
-				
-				<div class="project_content">
-					<div class="project_content-header">
-						<h3>Developing a framework</h3>
-						<p>Proin iaculis purus consequat sem cure  digni ssim 
-						donec porttitora entum suscipit  aenean rhoncus posuere 
-						odio in tincidunt.</p>
-					</div>
-					
-								
-					<div class="project__row">
+    <section class="project" id="portfolio-section">
+      <div class="container">
+        <div class="project_header">
+          <h2>Latest Project</h2>
+          <p class="subtitle">Proin iaculis purus consequat sem cure</p>
+        </div>
 
-						<img class="project_icon" src="icons/icon-basket.png">
-						<div class="project__row-content">		
-							<h4 class="project__row--heading">E-Commarce Ready</h4>
-							<p class="project__row--text">Proin iaculis purus consequat sem cure  digni ssim.</p>
-						</div>
-						
-					</div>
-					
-					<div class="project__row">
-						<img class="project_icon" src="icons/icon-basket.png">
-						<div class="project__row-content">
-							<h4 class="project__row--heading">Powerful SEO Features</h4>
-							<p class="project__row--text">Proin iaculis purus consequat sem cure.</p>
-						</div>
-					</div>
-					
-					
-					<div class="project__row">
+        <div class="project_content">
+          <div class="project_content-header">
+            <h3>Developing a framework</h3>
+            <p>
+              Proin iaculis purus consequat sem cure digni ssim donec porttitora
+              entum suscipit aenean rhoncus posuere odio in tincidunt.
+            </p>
+          </div>
 
-						<img class="project_icon" src="icons/icon-basket.png">
-						<div class="project__row-content">
-							<h4 class="project__row--heading">Secure Encryption</h4>
-							<p class="project__row--text">Proin iaculis purus consequat sem cure iaculis purus.</p>			
-						</div>
-					</div>
-					
-					<p>Proin iaculis purus consequat sem cure  digni ssim donec 
-					porttitora entum suscipit  aenean rhoncus posuere odio in.</p>
-					
-					<div class="hypertext">
-						<a class="hypertext-link" href="#" target="blank">View Details</a>
-						<img class="hypertext-link_icon" src="icons/arrow_right.png">
-					</div>	
-				</div>
-			</div>
-		</section>
+          <div class="project__row">
+            <img class="project_icon" src="icons/icon-basket.png" />
+            <div class="project__row-content">
+              <h4 class="project__row--heading">E-Commarce Ready</h4>
+              <p class="project__row--text">
+                Proin iaculis purus consequat sem cure digni ssim.
+              </p>
+            </div>
+          </div>
 
+          <div class="project__row">
+            <img class="project_icon" src="icons/icon-basket.png" />
+            <div class="project__row-content">
+              <h4 class="project__row--heading">Powerful SEO Features</h4>
+              <p class="project__row--text">
+                Proin iaculis purus consequat sem cure.
+              </p>
+            </div>
+          </div>
 
-	<section class="culture">
-			<div class="container">
-				<div class="culture_header">
-					<h2>culture &amp; values</h2>
-					<p class="subtitle">Proin iaculis purus consequat cure.</p>
-				</div>
-			
+          <div class="project__row">
+            <img class="project_icon" src="icons/icon-basket.png" />
+            <div class="project__row-content">
+              <h4 class="project__row--heading">Secure Encryption</h4>
+              <p class="project__row--text">
+                Proin iaculis purus consequat sem cure iaculis purus.
+              </p>
+            </div>
+          </div>
 
-			<div class="culture_content">
+          <p>
+            Proin iaculis purus consequat sem cure digni ssim donec porttitora
+            entum suscipit aenean rhoncus posuere odio in.
+          </p>
 
-				<div class="culture_content-list">
-					<img class="culture__content--img"src="icons/melody_icon.png">
-					<h3 class="culutre__content--heading">Work-Life Balance</h3>
-					<p>Proin iaculis purus consequat sem cure 
-					digni ssim. Donec porttitora entum suscipit 
-					aenean rhoncus posuere odio in tincidunt.</p>
-				</div>
+          <div class="hypertext">
+            <a class="hypertext-link" href="#" target="blank">View Details</a>
+            <img class="hypertext-link_icon" src="icons/arrow_right.png" />
+          </div>
+        </div>
+      </div>
+    </section>
 
-				<div class="culture_content-list">
-					<img class="culture__content--img"src="icons/diagram_icon.png">
-					<h3 class="culutre__content--heading">Quality Over Quantity</h3>
-					<p>Proin iaculis purus consequat sem cure 
-					digni ssim. Donec porttitora entum suscipit 
-					aenean rhoncus posuere odio in tincidunt.</p>
-				</div>
-				
-				<div class="culture_content-list">
-					<img class="culture__content--img"src="icons/star_icon.png">
-					<h3 class="culutre__content--heading">Deliver Excellence</h3>
-					<p>Proin iaculis purus consequat sem cure 
-					digni ssim. Donec porttitora entum suscipit 
-					aenean rhoncus posuere odio in tincidunt.</p>
-				</div>
-			</div>
-		</div>
-	</section>
+    <section class="culture">
+      <div class="container">
+        <div class="culture_header">
+          <h2>culture &amp; values</h2>
+          <p class="subtitle">Proin iaculis purus consequat cure.</p>
+        </div>
 
-		<section class="clients">
-			<div class="container">
+        <div class="culture_content">
+          <div class="culture_content-list">
+            <img class="culture__content--img" src="icons/melody_icon.png" />
+            <h3 class="culutre__content--heading">Work-Life Balance</h3>
+            <p>
+              Proin iaculis purus consequat sem cure digni ssim. Donec
+              porttitora entum suscipit aenean rhoncus posuere odio in
+              tincidunt.
+            </p>
+          </div>
 
-				<div class="clients_header">
-					<h2>Our Awesome Clients</h2>
-					<p class="subtitle">Proin iaculis purus consequat sem cure</p>
-				</div>
+          <div class="culture_content-list">
+            <img class="culture__content--img" src="icons/diagram_icon.png" />
+            <h3 class="culutre__content--heading">Quality Over Quantity</h3>
+            <p>
+              Proin iaculis purus consequat sem cure digni ssim. Donec
+              porttitora entum suscipit aenean rhoncus posuere odio in
+              tincidunt.
+            </p>
+          </div>
 
-				<div class="clients_content">
-					
-					 <div class="clients_column1"> 
-						<div class="clients_content-circle">
-							
-						</div>
-						<div class="clients_content-text">
-							<p><q> Proin iaculis purus consequat sem cure  digni ssim 
-							donec porttitora entum suscipit aenean rhoncus.</q></p>
-							<footer class="clients_footer">- Jamie Richardson, Founder of Cocoa Media</footer>
-						</div>
-					</div> 
-					
-					<div class="clients_column2">
-						
+          <div class="culture_content-list">
+            <img class="culture__content--img" src="icons/star_icon.png" />
+            <h3 class="culutre__content--heading">Deliver Excellence</h3>
+            <p>
+              Proin iaculis purus consequat sem cure digni ssim. Donec
+              porttitora entum suscipit aenean rhoncus posuere odio in
+              tincidunt.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-						<div class="clients_content-text--2">
-							<p><q> Proin iaculis purus consequat sem cure  digni ssim 
-							donec porttitora entum suscipit aenean rhoncus.</q></p>
-							<footer class="clients_footer">- Kim Thompson, Founder of Rainel</footer>
-						</div>
+    <section class="clients">
+      <div class="container">
+        <div class="clients_header">
+          <h2>Our Awesome Clients</h2>
+          <p class="subtitle">Proin iaculis purus consequat sem cure</p>
+        </div>
 
-						<div class="clients_content-circle">
-						</div>
-					</div> 
-		
-				</div>
-			</div>			
-		</section>
-				
-		
+        <div class="clients_content">
+          <div class="clients_column1">
+            <div class="clients_content-circle"></div>
+            <div class="clients_content-text">
+              <p>
+                <q>
+                  Proin iaculis purus consequat sem cure digni ssim donec
+                  porttitora entum suscipit aenean rhoncus.</q
+                >
+              </p>
+              <footer class="clients_footer">
+                - Jamie Richardson, Founder of Cocoa Media
+              </footer>
+            </div>
+          </div>
 
-		<section class="next-project">
-			
-					<div class="container">
-					
-					<div class="next-project_content">			
-						<h2>Ready to talk about your next project?</h2>
-						<button class="next-project_content--button">Contact us</button>
-					</div>
-				</div>
-		</section>		
-						
-		<section class="logos">
-			<div class="container">
-				
-				<div class="logos_content">
-					<img src="icons/envato.png" alt="logo_icon1">
-					<img src="icons/wordpress.png" alt="logo_icon2">
-					<img src="icons/tuts.png" alt="logo_icon3">
-					<img src="icons/microlancercopy.png" alt="logo_icon4">
-				</div>
-				
+          <div class="clients_column2">
+            <div class="clients_content-text--2">
+              <p>
+                <q>
+                  Proin iaculis purus consequat sem cure digni ssim donec
+                  porttitora entum suscipit aenean rhoncus.</q
+                >
+              </p>
+              <footer class="clients_footer">
+                - Kim Thompson, Founder of Rainel
+              </footer>
+            </div>
 
-			</div>
+            <div class="clients_content-circle"></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		</section>
+    <section class="next-project">
+      <div class="container">
+        <div class="next-project_content">
+          <h2>Ready to talk about your next project?</h2>
+          <button class="next-project_content--button">Contact us</button>
+        </div>
+      </div>
+    </section>
 
-		<section class="footer" id="contact-section">
-			<div class="container">
-					<div class="footer__column--container">
-						<div class="footer__column1">
-							<h3>Contact us</h3>
-								<ul>
-									<li>
-										<p class="footer__column1--paragraph1">55 Main St.
-										Toronto, ON
-										M1H 3A5</p>
-									</li>
-									<li>	
-										<p class="footer__column1--paragraph2">(416) 555-5252</p>
-									</li>
-									<li>
-										<p class="footer__column1--paragraph3">hello@treehouse.com</p>
-									</li>
+    <section class="logos">
+      <div class="container">
+        <div class="logos_content">
+          <img src="icons/envato.png" alt="logo_icon1" />
+          <img src="icons/wordpress.png" alt="logo_icon2" />
+          <img src="icons/tuts.png" alt="logo_icon3" />
+          <img src="icons/microlancercopy.png" alt="logo_icon4" />
+        </div>
+      </div>
+    </section>
 
-								</ul>
-						</div>	
-				
+    <section class="footer" id="contact-section">
+      <div class="container">
+        <div class="footer__column--container">
+          <div class="footer__column1">
+            <h3>Contact us</h3>
+            <ul>
+              <li>
+                <p class="footer__column1--paragraph1">
+                  55 Main St. Toronto, ON M1H 3A5
+                </p>
+              </li>
+              <li><p class="footer__column1--paragraph2">(416) 555-5252</p></li>
+              <li>
+                <p class="footer__column1--paragraph3">hello@treehouse.com</p>
+              </li>
+            </ul>
+          </div>
 
-					<div class="footer__column2">
-						<h3>Latest posts</h3>
-							<ul>
-								<li>
-									<p class="footer__column2--paragraph1">Made with love in Toronto</p>
-								</li>
-								<li>	
-									<p class="footer__column2--paragraph2">Startup New &amp; Emerging Tech</p>
-								</li>
-								
-								<li>
-									<p class="footer__column2--paragraph3">Bitcoin Will Soon Rule The World</p>
-								</li>
+          <div class="footer__column2">
+            <h3>Latest posts</h3>
+            <ul>
+              <li>
+                <p class="footer__column2--paragraph1">
+                  Made with love in Toronto
+                </p>
+              </li>
+              <li>
+                <p class="footer__column2--paragraph2">
+                  Startup New &amp; Emerging Tech
+                </p>
+              </li>
 
-								<li>
-									<p class="footer__column2--paragraph4">Wearable Technology On The Rise</p>
-								</li>
+              <li>
+                <p class="footer__column2--paragraph3">
+                  Bitcoin Will Soon Rule The World
+                </p>
+              </li>
 
-								<li>
-									<p class="footer__column2--paragraph5">Lean Web Design in 30 Days!</p>
-								</li>
+              <li>
+                <p class="footer__column2--paragraph4">
+                  Wearable Technology On The Rise
+                </p>
+              </li>
 
-							</ul>
-					</div>
-					
-					<div class="footer__column3">
-						<h3>Contact us</h3>
-							<ul>
-								<li>
-									<p class="footer__column3--paragraph1">Confucius: Life is really simple, 
-									but we insist on making it complicated. <span class="bold">#famousquotes</span></p>
-								</li>
-								<li>	
-									<p class="footer__column3--paragraph2">Grab the Free Treehouse web template at FreebiesXpress!<span class="bold">#freebies #templates</span></p>
-								</li>		
-							</ul>
-					</div>	
+              <li>
+                <p class="footer__column2--paragraph5">
+                  Lean Web Design in 30 Days!
+                </p>
+              </li>
+            </ul>
+          </div>
 
-				</div>	
-				
+          <div class="footer__column3">
+            <h3>Contact us</h3>
+            <ul>
+              <li>
+                <p class="footer__column3--paragraph1">
+                  Confucius: Life is really simple, but we insist on making it
+                  complicated. <span class="bold">#famousquotes</span>
+                </p>
+              </li>
+              <li>
+                <p class="footer__column3--paragraph2">
+                  Grab the Free Treehouse web template at FreebiesXpress!<span class="bold">#freebies #templates</span>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-			</div>
+    <section class="media_footer">
+      <div class="container">
+        <div class="media__footer-content">
+          <footer class="media__footer--footer">
+            @ Copyright 2014 FreebiesXpress.com
+          </footer>
+          <div class="media__footer--icons">
+            <a href="https://www.twitter.com"
+              ><img src="icons/twitter_footer.png" alt="footer__icon--twitter"
+            /></a>
+            <a href="https://www.facebook.com/"
+              ><img src="icons/facebook.png" alt="footer__icon--facebook"
+            /></a>
+            <a href="https://www.pinterest.com"
+              ><img src="icons/pinterest.png" alt="footer__icon--pinterest"
+            /></a>
+            <a href="https://www.plus.google.com"
+              ><img src="icons/googleplus.png" alt="footer__icon--googleplus"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-
-		</section>
-		
-
-		<section class="media_footer">
-			<div class="container">
-				<div class="media__footer-content">
-					<footer class="media__footer--footer">@ Copyright 2014 FreebiesXpress.com</footer>
-					<div class="media__footer--icons">
-							<a href="https://www.twitter.com"><img src="icons/twitter_footer.png" alt="footer__icon--twitter"></a>
-							<a href="https://www.facebook.com/"><img src="icons/facebook.png" alt="footer__icon--facebook"></a>
-							<a href="https://www.pinterest.com"><img src="icons/pinterest.png" alt="footer__icon--pinterest"></a>
-							<a href="https://www.plus.google.com"><img src="icons/googleplus.png" alt="footer__icon--googleplus"></a>
-					</div>
-				</div>			
-			</div>
-		</section>	
-
-
-	<script type="text/javascript" src="script.js"></script>
-</body>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
 </html>
