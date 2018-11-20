@@ -67,7 +67,7 @@
 
   window.onscroll = function () {
     var scrollPosition =
-      document.documentElement.scrollTop + 50 || document.body.scrollTop;
+      document.documentElement.scrollTop + 150 || document.body.scrollTop;
 
     for (i in sections) {
       if (sections[i] <= scrollPosition) {
