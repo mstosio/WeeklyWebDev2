@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <title>Weekly Web Dev Challange 2</title>
@@ -19,27 +19,29 @@
         <img class="hamburger_icon" src="icons/menu_icon.png" alt="hamburger-navbar" />
       </div>
       <div class="navbar_logo">
-        <li class="navbar_logo_li">
-          <a class="navbar_a" href="#">
-            <img class="navbar_logo-img" src="icons/logo.png" alt="logo" />
-          </a>
-        </li>
+        <ul>
+          <li class="navbar_logo_li">
+            <a class="navbar_a" href="#">
+              <img class="navbar_logo-img" src="icons/logo.png" alt="logo" />
+            </a>
+          </li>
+        </ul>
       </div>
 
       <div class="navbar_menu">
         <ul>
-          <li class="navbar_item"><a class="navbar_item-navbutton" href="#main-banner__section">Home</a></li>
+          <li class="navbar_item"><a class="navbar_item-navbutton-active" href="#main-banner__section">Home</a></li>
           <li class="navbar_item"><a class="navbar_item-navbutton" href="#service__section">About</a></li>
           <li class="navbar_item"><a class="navbar_item-navbutton" href="#relax__section">Blog</a></li>
           <li class="navbar_item"><a class="navbar_item-navbutton" href="#portfolio__section">Portfolio</a></li>
-          <li class="navbar_item"><a class="navbar_item-navbutton" href="#next-project__section">Contact</a></li>
+          <li class="navbar_item"><a class="navbar_item-navbutton" id="gowno" href="#next-project__section">Contact</a></li>
         </ul>
       </div>
     </nav>
   </header>
 
   <section class="main-banner" id="main-banner">
-      <span id="main-banner__section" class="anchor"></span>
+    <span id="main-banner__section" class="anchor" id="anchor-1"></span>
     <div class="main-banner_overlay">
       <div class="main-banner_content" id="main-banner_content">
         <h1>Creative Digital Solutions</h1>
@@ -54,7 +56,7 @@
   <div class="container">
 
     <section class="service" id="service-section">
-      <span id="service__section" class="anchor"></span>
+      <span id="service__section" class="anchor" id="anchor-2"></span>
       <div id="service_header" class="service_header">
         <h2>Professional Services</h2>
         <p>Proin iaculis purus consequat sem cure</p>
@@ -95,7 +97,7 @@
   </div>
 
   <section id="relax" class="relax">
-    <span id="relax__section" class="anchor"></span>
+    <span id="relax__section" class="anchor" id="anchor-3"></span>
     <div class="relax_left"></div>
     <div class="relax_right">
       <div class="relax_right_content">
@@ -122,7 +124,7 @@
   </section>
 
   <section class="project" id="portfolio-section">
-    <span id="portfolio__section" class="anchor"></span>
+    <span id="portfolio__section" class="anchor" id="anchor-4"></span>
     <div class="container">
       <div class="project_header">
         <h2>Latest Project</h2>
@@ -182,7 +184,6 @@
   </section>
 
   <section class="culture">
-    <span id="culture-section" class="anchor"></span>
     <div class="container">
       <div class="culture_header">
         <h2>culture &amp; values</h2>
@@ -224,6 +225,7 @@
   </section>
 
   <section class="clients">
+
     <div class="container">
       <div class="clients_header">
         <h2>Our Awesome Clients</h2>
@@ -264,7 +266,7 @@
   </section>
 
   <section class="next-project">
-    <span id="next-project__section" class="anchor"></span>
+    <span id="next-project__section" class="anchor" id="anchor-5"></span>
     <div class="container">
       <div class="next-project_content">
         <h2>Ready to talk about your next project?</h2>
@@ -375,7 +377,7 @@
     </div>
   </section>
 
-  <script type="text/javascript" src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
